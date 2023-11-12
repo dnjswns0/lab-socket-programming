@@ -15,7 +15,7 @@ while 1:
     print('Client address:', addr)
     data = conn.recv(BUFFER_SIZE)
 
-    currentTime = " " + " updated !!! " + time.ctime(time.time()) + "\r\n"
+    currentTime = " " + "202102648_seowonjun updated !!! " + time.ctime(time.time()) + "\r\n"
     print(data.decode('utf-8'))
     data = data + currentTime.encode('ascii')
     conn.send(data)
